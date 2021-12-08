@@ -1,0 +1,422 @@
+body{
+	margin: 0;
+	background: url("images/fond.png") no-repeat;
+}
+
+header, footer{
+	font-family: "Geometr415 Md BT";
+	color: #297E1A;
+}
+
+#toggle{
+	display: none;
+}
+
+/* Header */
+
+header{
+	height: 8rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: #9EE791;
+}
+
+header #burger{
+	display: none;
+}
+
+header #logo img{
+	width:  17rem;
+	height: 6rem;
+	padding-top: 1rem;
+	padding-left: 2rem;
+}
+
+header #logo{
+	flex: 20%;
+}
+
+header nav{
+	flex : 80%;
+	margin-left: 25%;
+}
+
+header nav .menu{
+	font-size: 2.5rem;
+	display: flex;
+	list-style-type: none;
+}
+
+header nav .menu > li{
+	margin-right: 5%;
+}
+
+header nav .menu li a{
+	text-decoration: none;
+	color: #297E1A;
+}
+
+header nav .menu li a:hover{
+	color: #FED330;
+}
+
+header nav .menu .betes{
+	margin-right: 0;
+	width: 10rem;
+}
+
+header nav .menu .betes > a{
+	margin-right: 5%;
+}
+
+header nav .menu .betes > li a{
+	padding: 1rem;
+}
+
+header nav > .menu .betes .sous-menu{
+	display: none;
+}
+
+header nav .menu .betes .sous-menu li{
+	list-style-type: none;
+}
+
+header nav .menu .betes .sous-menu li:hover{
+	background-color: #297E1A;
+	margin-top: -2px;
+}
+
+header nav .menu .betes .sous-menu li a{
+	display: block;
+	padding: 1rem;
+}
+
+header nav > .menu .betes:hover .sous-menu{
+	display: block;
+	cursor: pointer;
+}
+
+header nav .menu .sous-menu{
+	padding: 0;
+	margin-top: 2.5rem;
+	font-size: 1.5rem;
+	background-color: #9EE791;
+	border-top: 5px solid #297E1A;
+	position: relative;
+	z-index: 1;
+}
+
+/* Main width 480 gauche et droite / 600 pour centre */
+
+	main{
+		display: flex;
+		justify-content: space-around;
+		padding: 2.2rem;
+	}
+
+	main section{
+		border: 1px solid #707070;
+	}
+
+	main section #titre{
+		font-family: "Geometr415 Md BT";
+		text-align: center;
+		color: #ffffff;
+		background-color: #A1785C;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-radius: 15px 15px 0 0;
+		border-bottom: 1px solid #707070;
+	}
+
+	main #espace-membre, main #bete-dispo{
+		 width: 25%;
+		 height: 600px;
+		 border-radius: 15px;
+		 background-color: #E3C099;
+	}
+
+	main #espace-membre #contenu #formulaire{
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	main #espace-membre #contenu #formulaire label{
+		font-family: "Geometr415 Md BT";
+		color: #A1785C;
+		font-size: 1.5rem;
+	}
+
+	main #espace-membre #contenu #formulaire #lmail{
+		font-size: 1.2rem;
+		color: #A1785C;
+		border-radius: 5px;
+		border: 1px solid #707070;
+		padding: 1rem 0 1rem 1rem;
+	}
+
+	main #espace-membre #contenu #formulaire #lmail:focus{
+		outline: none;
+		border: 2px solid #A1785C;
+	}
+
+	main #espace-membre #contenu #formulaire #lmdp{
+		font-size: 1.2rem;
+		color: #A1785C;
+		border-radius: 5px;
+		border: 1px solid #707070;
+		padding: 1rem 0 1rem 1rem;
+	}
+
+	main #espace-membre #contenu #formulaire #lmdp:focus{
+		outline: none;
+		border: 2px solid #A1785C;
+	}
+
+	main #espace-membre #contenu #formulaire a{
+		font-family: "Usual Light";
+		color: #A1785C;
+	}
+
+	main #espace-membre #contenu #formulaire #bouton-inscription{
+		font-family: "Geometr415 Md BT";
+		font-size: 1.2rem;
+		background-color: #297E1A;
+		padding: 1rem 0 1rem 0;
+		border-radius: 15px;
+		border: 2px solid #707070;
+		color: #ffffff;
+	}
+
+	main #espace-membre #contenu #formulaire #connexion{
+		font-family: "Geometr415 Md BT";
+		font-size: 1.2rem;
+		background-color: #A1785C;
+		padding: 1rem 0 1rem 0;
+		border-radius: 15px;
+		border: 2px solid #707070;
+		color: #ffffff;
+	}
+
+	main .centre{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 34%;
+	}
+
+	main .centre #kesako-progression, main .centre #anniversaire{
+		 width: 100%;
+		 height: 280px;
+		 border-radius: 15px;
+		 background-color: #E3C099;
+	}
+
+
+	main .centre #kesako-progression #titre{
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+
+	main section #contenu{
+		padding : 5%
+	}
+
+	main .centre #kesako-progression #contenu p{
+		margin: 0;
+	}
+
+	main .centre #anniversaire #contenu .villageois .photo{
+		width: 50px;
+		height: 50px;
+		background-color: #FED330;
+	}
+
+/*Footer*/
+
+footer{
+	height: 8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #9EE791;
+	padding: 0 2rem 0 2rem;
+}
+
+footer #copyright{
+	margin-left: 10%;
+	flex-basis: 33.33%;
+}
+
+footer .menu-footer{
+	flex-basis: 33.33%;
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	font-size:  1.5rem;
+	margin-right: 10%;
+}
+
+footer .menu-footer li a{
+	color: #297E1A;
+	text-decoration: none;
+}
+
+footer .menu-footer li a:hover{
+	color: #FED330;
+}
+
+@media screen and (max-width: 1805px) and (min-width: 1200px){
+	main #espace-membre #contenu{
+		padding: 0 5%;
+	}
+}
+
+/* Header Responsive */
+
+@media screen and (max-width: 1520px){
+	header nav{
+		margin-left: 2%;
+	}
+}
+
+@media screen and (max-width: 1390px) and (min-width: 1200px){
+	main #espace-membre #contenu #formulaire{
+		gap: 0.4rem;
+	}
+}
+
+@media screen and (max-width: 505px){
+	main #espace-membre #contenu{
+		padding: 0 5%;
+	}
+}
+
+@media screen and (max-width: 395px){
+	main #espace-membre #contenu #formulaire{
+		gap: 0.4rem;
+	}
+}
+
+/* Partie Responsive */
+
+@media screen and (max-width: 1200px){
+
+	/*Responsive header*/
+
+	header nav > .menu li .sous-menu{
+		display: grid;
+	}
+
+	header #burger{
+		display: block;
+		border: 2px solid #297E1A;
+		color: #297E1A;
+		font-size: 5rem;
+		border-radius: 10px;
+		position: absolute;
+		height: 96px;
+		margin-left: 80%;
+		top: 15px;
+		line-height: 100px;
+	}
+
+	header nav{
+		display: none;
+		position: absolute;
+		left: -38px;
+		top: 88px;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	header nav .menu .betes > a{
+		margin-right: 0px;
+		border-top: 2px solid;
+	}
+
+	header nav .menu .sous-menu{
+		margin-top: 0px;
+		border-top: 0px;
+	}
+
+	header nav .menu .betes .sous-menu{
+		display: grid;
+	}
+
+	header nav .menu .betes .sous-menu li a{
+		padding-right: 6px;
+		padding-left: 2rem;
+		font-size: 2.5rem;
+	}
+
+	header nav .menu .betes{
+		width: auto;
+	}
+
+	header nav .menu li{
+		margin-right: 0px;
+	}
+
+	header nav .menu{
+		display: grid;
+	}
+
+	header nav .menu li a:hover{
+		border-top: 2px solid #FED330;
+		margin-top: -2px;
+		background-color: #297E1A;
+	}
+
+	header nav .menu li a{
+		width: 100%;
+		display: block;
+		background-color: #9EE791;
+		padding: 1rem 22px 1rem 1rem;
+		border-bottom: 2px solid;
+	}
+
+	#toggle:checked ~ header nav {
+  		display: grid;
+	}
+
+	#toggle:checked ~ header #burger{
+		background-color: #297E1A;
+		color: #FED330;
+	}
+
+	/* Responsive Main */
+
+	main{
+		flex-direction: column;
+		gap : 3em;
+	}
+
+	main #espace-membre{
+		width: 100%;
+	}
+
+	main .centre{
+		width: 100%;
+		gap : 3em;
+	}
+
+	main #bete-dispo{
+		width: 100%;
+	}
+
+	/* Responsive footer */
+
+	footer{
+		height: auto;
+	}
+
+	footer .menu-footer{
+		flex-direction: column;
+		margin-right: 5%;
+		margin-top: 15px;
+		line-height: 32px;
+	}
+
+}
