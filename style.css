@@ -19,6 +19,8 @@ header{
 	display: flex;
 	justify-content: space-between;
 	background-color: #9EE791;
+	position: fixed;
+	width: 100%;
 }
 
 header #burger{
@@ -111,7 +113,7 @@ header nav .menu .sous-menu{
 	main{
 		display: flex;
 		justify-content: space-around;
-		padding: 2.2rem;
+		padding: 10.5rem 1rem 2.25rem 1rem;
 	}
 
 	main section{
@@ -130,7 +132,7 @@ header nav .menu .sous-menu{
 	}
 
 	main #espace-membre, main #bete-dispo{
-		 width: 25%;
+		 width: 30%;
 		 height: 600px;
 		 border-radius: 15px;
 		 background-color: #E3C099;
@@ -225,23 +227,123 @@ header nav .menu .sous-menu{
 
 	main .centre #kesako-progression #contenu p{
 		margin: 0;
+		font-family: "Usual Light";
+		color: #A1785C;
 	}
 
-	main .centre #anniversaire #contenu .villageois .photo{
+	main .centre #anniversaire #contenu .colonne{
+		display: flex;
+		align-items: flex-start;
+	}
+
+	main .centre #anniversaire #contenu .colonne .villageois{
+		margin-right: 10px;
+	}
+
+	main .centre #anniversaire #contenu .colonne .villageois .photo{
+		width: 75px;
+		height: 75px;
+		background-color: #FED330;
+	}
+	main .centre #anniversaire #contenu .colonne .villageois .nom{
+		text-align: center;
+		font-family: "Geometr415 Md BT";
+		color: #A1785C;
+		font-weight: bold;
+	}
+
+	main #bete-dispo #titre{
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: -20px;
+	}
+
+	main #bete-dispo #tete-bete-dispo #titre h2{
+		padding-top: 15px;
+		padding-bottom: 5px;
+	}
+
+	main #bete-dispo #titre #menu-betes-dispo{
+		list-style-type: none;
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0;
+		margin-bottom: 7.5px;
+	}
+
+	main #bete-dispo #titre #menu-betes-dispo li a{
+		background-color: #9EE791;
+		color: #297E1A;
+		text-decoration: none;
+		padding: 0.5rem;
+		border-radius: 10px 10px 0 0;
+	}
+
+	main #bete-dispo #titre #menu-betes-dispo li a:hover{
+		background-color: #297E1A;
+		color: #FED330;
+	}
+
+	main #bete-dispo #contenu{
+		padding: 2%;
+		height: 460px;
+		overflow-y: scroll;
+		scrollbar-width: thin;
+		scrollbar-color: #297E1A #9EE791;
+	}
+
+	main #bete-dispo #contenu .liste-betes{
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	main #bete-dispo #contenu .liste-betes .colonne{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	main #bete-dispo #contenu .liste-betes .colonne .bete{
+		width: 23%;
+		height: 14rem;
+		font-family: "Usual Light";
+		color: #A1785C;
+		font-size: 0.7rem;
+		display: grid;
+	}
+
+	main #bete-dispo #contenu .liste-betes .colonne .bete .nom-bete{
+		text-align: center;
+		font-size: 0.9rem;
+		font-weight: bold;
+	}
+
+	main #bete-dispo #contenu .liste-betes .colonne .bete .photo-bete{
 		width: 50px;
 		height: 50px;
-		background-color: #FED330;
+		background-color: brown;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	main #bete-dispo #contenu .liste-betes .colonne .bete .resume-bete p{
+		margin: 0;
+	}
+
+	main #bete-dispo #contenu .liste-betes .colonne .bete .resume-bete .stat-bete p:nth-child(1){
+		font-size: 0.8rem;
+		font-weight: bold;
 	}
 
 /*Footer*/
 
 footer{
-	height: 8rem;
+	height: 7rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #9EE791;
-	padding: 0 2rem 0 2rem;
+	padding: 0.55rem 2rem 0 2rem;
 }
 
 footer #copyright{
@@ -281,11 +383,24 @@ footer .menu-footer li a:hover{
 	}
 }
 
-@media screen and (max-width: 1390px) and (min-width: 1200px){
+@media screen and (max-width: 1390px) and (min-width: 1265px){
 	main #espace-membre #contenu #formulaire{
 		gap: 0.4rem;
 	}
+
+	main #kesako-progression #contenu {
+		padding: 2%;
+	}
+
+	main #bete-dispo #contenu .liste-betes .colonne .bete .resume-bete .stat-bete p:nth-child(1){
+		font-size: 0.7rem;
+	}
+
+	main #bete-dispo #contenu .liste-betes .colonne .bete .resume-bete .stat-bete p:nth-child(2){
+		font-size: 0.6rem;
+	}
 }
+
 
 @media screen and (max-width: 505px){
 	main #espace-membre #contenu{
@@ -301,7 +416,7 @@ footer .menu-footer li a:hover{
 
 /* Partie Responsive */
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1265px){
 
 	/*Responsive header*/
 
