@@ -138,19 +138,28 @@ header nav .menu .sous-menu{
 		 background-color: #E3C099;
 	}
 
-	main #espace-membre #contenu #formulaire{
+	main #espace-membre #contenu form{
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
 	}
 
-	main #espace-membre #contenu #formulaire label{
+	main #espace-membre #contenu #formulaire-inscription{	
+		gap: 0.5rem;
+	}
+
+
+	main #espace-membre #contenu form label{
 		font-family: "Geometr415 Md BT";
 		color: #A1785C;
 		font-size: 1.5rem;
 	}
 
-	main #espace-membre #contenu #formulaire #lmail{
+	main #espace-membre #contenu #formulaire-inscription label{
+		font-size: 1rem;		
+	}
+
+	main #espace-membre #contenu form input[type=text], main #espace-membre #contenu form input[type=password]{
 		font-size: 1.2rem;
 		color: #A1785C;
 		border-radius: 5px;
@@ -158,30 +167,26 @@ header nav .menu .sous-menu{
 		padding: 1rem 0 1rem 1rem;
 	}
 
-	main #espace-membre #contenu #formulaire #lmail:focus{
+	main #espace-membre #contenu #formulaire-inscription input[type=text],main #espace-membre #contenu #formulaire-inscription input[type=password]{
+		font-size: 1rem;
+		padding: 0.5rem 0 0.5rem 0.5rem;	
+	}
+
+	main #espace-membre #contenu form input[type=text]:focus, main #espace-membre #contenu form input[type=password]:focus{
 		outline: none;
 		border: 2px solid #A1785C;
 	}
 
-	main #espace-membre #contenu #formulaire #lmdp{
-		font-size: 1.2rem;
-		color: #A1785C;
-		border-radius: 5px;
-		border: 1px solid #707070;
-		padding: 1rem 0 1rem 1rem;
+	main #espace-membre #contenu #formulaire-inscription #identite{
+		display: flex;
 	}
 
-	main #espace-membre #contenu #formulaire #lmdp:focus{
-		outline: none;
-		border: 2px solid #A1785C;
-	}
-
-	main #espace-membre #contenu #formulaire a{
+	main #espace-membre #contenu form a{
 		font-family: "Usual Light";
 		color: #A1785C;
 	}
 
-	main #espace-membre #contenu #formulaire #bouton-inscription{
+	main #espace-membre #contenu form #bouton-inscription{
 		font-family: "Geometr415 Md BT";
 		font-size: 1.2rem;
 		background-color: #297E1A;
@@ -191,7 +196,11 @@ header nav .menu .sous-menu{
 		color: #ffffff;
 	}
 
-	main #espace-membre #contenu #formulaire #connexion{
+	main #espace-membre #contenu form #bouton-inscription:hover{
+		cursor: pointer;
+	}
+
+	main #espace-membre #contenu form #connecter, main #espace-membre #contenu form #inscrire{
 		font-family: "Geometr415 Md BT";
 		font-size: 1.2rem;
 		background-color: #A1785C;
@@ -199,6 +208,10 @@ header nav .menu .sous-menu{
 		border-radius: 15px;
 		border: 2px solid #707070;
 		color: #ffffff;
+	}
+
+	main #espace-membre #contenu form #connecter:hover, main #espace-membre #contenu form #inscrire:hover{
+		cursor: pointer;
 	}
 
 	main .centre{

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<title>My Animal Crossing</title>
 </head>
 <body>
@@ -32,15 +33,103 @@
 			<section id="espace-membre">
 				<div id="titre"><h2>Connecte-toi sur My Animal Crossing et pars collectionner les objets, insectes, poissons, créatures marines et fossiles.</h2></div>
 				<div id="contenu">
-						<form action="#" id="formulaire">
+							<form action="#" id="formulaire-connexion">
+  								<label for="lmail">Email:</label>
+  								<input type="text" id="lmail" name="email" value="lydarly@gmail.com">
+  								<label for="lmdp">Mot de passe:</label>
+  								<input type="password" id="lmdp" name="motdepasse" value="toto">
+  								<a href="#">Mot de passe oublié ?</a>
+  								<button id="bouton-inscription" onclick="pageMembre(true)">Pas encore inscrit ?</button>
+  								<input type="submit" id="connecter" value="Se connecter" onclick="seconnecter()">
+							</form> 
+
+						<form action="#" id="formulaire-inscription">
   							<label for="lmail">Email:</label>
   							<input type="text" id="lmail" name="email" value="lydarly@gmail.com">
-  							<label for="lmdp">Mot de passe:</label>
-  							<input type="password" id="lmdp" name="motdepasse" value="toto">
-  							<a href="#">Mot de passe oublié ?</a>
-  							<button id="bouton-inscription">Pas encore inscrit ?</button>
-  							<input type="submit" id="connexion" value="Se connecter">
-					</form> 
+  								<label for="lmdp">Mot de passe:</label>
+  								<input type="password" id="lmdp" name="motdepasse" value="toto">
+  								<label for="clmdp">Confirmer le mot de passe:</label>
+  								<input type="password" id="clmdp" name="motdepasse" value="toto">							
+
+   							<div id="identite">
+   							<label for="date-anniversaire">Date d'anniversaire:</label>
+    							<div class="formulaire-date">
+   								<select id="date-anniversaire" class="jour">
+    								<option value="1">01</option>
+    								<option value="2">02</option>
+   									<option value="3">03</option>
+    								<option value="4">04</option>
+    								<option value="5">05</option>
+   									<option value="6">06</option>
+    								<option value="7">07</option>
+    								<option value="8">08</option>
+   									<option value="9">09</option>
+    								<option value="10">10</option>
+    								<option value="11">11</option>
+   									<option value="12">12</option>
+    								<option value="13">13</option>
+    								<option value="14">14</option>
+   									<option value="15">15</option>
+    								<option value="16">16</option>
+    								<option value="17">17</option>
+   									<option value="18">18</option>
+    								<option value="19">19</option>
+    								<option value="20">20</option>
+   									<option value="21">21</option>
+    								<option value="22">22</option>
+    								<option value="23">23</option>
+   									<option value="24">24</option>
+    								<option value="25">25</option>
+    								<option value="26">26</option>
+   									<option value="27">27</option>
+    								<option value="28">28</option>
+    								<option value="29">29</option>
+   									<option value="30">30</option>
+    								<option value="31">31</option>
+   								</select>
+   								<select id="date-anniversaire" class="mois">
+    								<option value="1">01</option>
+    								<option value="2">02</option>
+   									<option value="3">03</option>
+    								<option value="4">04</option>
+    								<option value="5">05</option>
+   									<option value="6">06</option>
+    								<option value="7">07</option>
+    								<option value="8">08</option>
+   									<option value="9">09</option>
+    								<option value="10">10</option>
+    								<option value="11">11</option>
+   									<option value="12">12</option>
+   								</select>
+   							</div>
+  							<label for="sexe">Sexe:</label>
+   								<select id="sexe">
+    								<option value="masculin">Masculin</option>
+    								<option value="feminin">Feminin</option>
+   									<option value="autre">Autre</option>
+   								</select>  								
+   							</div>
+
+   							<div class="geographie">
+    							<label for="pays">Pays:</label>
+  								<select id="pays">
+    								<option value="france">France</option>
+    								<option value="belgique">Belgique</option>
+    								<option value="suisse">Suisse</option>
+    								<option value="canada">Canada</option>
+    							</select>    							
+    							<label for="hemisphere">Hémisphère:</label>	  
+   								<select id="hemisphere">
+    								<option value="nord">Nord</option>
+    								<option value="sud">Sud</option>
+    							</select>
+   							</div>
+	
+    						<label for="nom-ile">Nom de l'île:</label>
+								<input type="text" id="nom-ile" name="ile" value="DidneyWorl">
+  							<button id="bouton-inscription" onclick="pageMembre(false)">Retour</button>
+  							<input type="submit" id="inscrire" value="S'inscrire" onclick="sinscrire()">
+						</form> 							
 				</div>
 			</section>
 			<div class="centre">
@@ -364,6 +453,6 @@
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</footer>	
-
+	 <script src="main.js"></script> 
 </body>
 </html>
