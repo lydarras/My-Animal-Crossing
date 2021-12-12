@@ -39,9 +39,9 @@
   								<label for="lmdp">Mot de passe:</label>
   								<input type="password" id="lmdp" name="motdepasse" value="toto">
   								<a href="#">Mot de passe oublié ?</a>
-  								<button id="bouton-inscription" onclick="pageMembre(true)">Pas encore inscrit ?</button>
-  								<input type="submit" id="connecter" value="Se connecter" onclick="seconnecter()">
+  								<button id="connecter" onclick="seconnecter()">Se connecter</button>
 							</form> 
+								<button id="bouton-inscription" onclick="pageMembre(true)">Pas encore inscrit ?</button>
 
 						<form action="#" id="formulaire-inscription">
   							<label for="lmail">Email:</label>
@@ -127,9 +127,10 @@
 	
     						<label for="nom-ile">Nom de l'île:</label>
 								<input type="text" id="nom-ile" name="ile" value="DidneyWorl">
-  							<button id="bouton-inscription" onclick="pageMembre(false)">Retour</button>
-  							<input type="submit" id="inscrire" value="S'inscrire" onclick="sinscrire()">
-						</form> 							
+
+  							<button id="inscrire" value="S'inscrire" onclick="sinscrire()">S'inscrire</button>
+						</form> 			
+						<button id="bouton-retour" onclick="pageMembre(false)">Retour</button>				
 				</div>
 			</section>
 			<div class="centre">
