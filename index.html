@@ -1,459 +1,458 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>My Animal Crossing</title>
-</head>
-<body>
-		<input type="checkbox" id="toggle">
-		<header>
-			<label for="toggle" id="burger">☰</label>
-			<div id="logo">
-				<img src="images/logo.png">
-			</div>
-			<nav>
-				<ul class="menu">
-					<li class="betes"><a href="#">Bêtes</a>
-						<ul class="sous-menu">
-							<li><a href="#">Insectes</a></li>
-							<li><a href="#">Poisson</a></li>
-							<li><a href="#">Créatures Marines</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Fossiles</a></li>
-					<li><a href="#">Oeuvres d'arts</a></li>
-					<li><a href="#">Objets</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<section id="espace-membre">
-				<div id="titre"><h2>Connecte-toi sur My Animal Crossing et pars collectionner les objets, insectes, poissons, créatures marines et fossiles.</h2></div>
-				<div id="contenu">
-							<form action="#" id="formulaire-connexion">
-  								<label for="lmail">Email:</label>
-  								<input type="text" id="lmail" name="email" value="lydarly@gmail.com">
-  								<label for="lmdp">Mot de passe:</label>
-  								<input type="password" id="lmdp" name="motdepasse" value="toto">
-  								<a href="#">Mot de passe oublié ?</a>
-  								<button id="connecter" onclick="seconnecter()">Se connecter</button>
-							</form> 
-								<button id="bouton-inscription" onclick="pageMembre(true)">Pas encore inscrit ?</button>
-
-						<form action="#" id="formulaire-inscription">
-  							<label for="lmail">Email:</label>
-  							<input type="text" id="lmail" name="email" value="lydarly@gmail.com">
-  								<label for="lmdp">Mot de passe:</label>
-  								<input type="password" id="lmdp" name="motdepasse" value="toto">
-  								<label for="clmdp">Confirmer le mot de passe:</label>
-  								<input type="password" id="clmdp" name="motdepasse" value="toto">							
-
-   							<div id="identite">
-   							<label for="date-anniversaire">Date d'anniversaire:</label>
-    							<div class="formulaire-date">
-   								<select id="date-anniversaire" class="jour">
-    								<option value="1">01</option>
-    								<option value="2">02</option>
-   									<option value="3">03</option>
-    								<option value="4">04</option>
-    								<option value="5">05</option>
-   									<option value="6">06</option>
-    								<option value="7">07</option>
-    								<option value="8">08</option>
-   									<option value="9">09</option>
-    								<option value="10">10</option>
-    								<option value="11">11</option>
-   									<option value="12">12</option>
-    								<option value="13">13</option>
-    								<option value="14">14</option>
-   									<option value="15">15</option>
-    								<option value="16">16</option>
-    								<option value="17">17</option>
-   									<option value="18">18</option>
-    								<option value="19">19</option>
-    								<option value="20">20</option>
-   									<option value="21">21</option>
-    								<option value="22">22</option>
-    								<option value="23">23</option>
-   									<option value="24">24</option>
-    								<option value="25">25</option>
-    								<option value="26">26</option>
-   									<option value="27">27</option>
-    								<option value="28">28</option>
-    								<option value="29">29</option>
-   									<option value="30">30</option>
-    								<option value="31">31</option>
-   								</select>
-   								<select id="date-anniversaire" class="mois">
-    								<option value="1">01</option>
-    								<option value="2">02</option>
-   									<option value="3">03</option>
-    								<option value="4">04</option>
-    								<option value="5">05</option>
-   									<option value="6">06</option>
-    								<option value="7">07</option>
-    								<option value="8">08</option>
-   									<option value="9">09</option>
-    								<option value="10">10</option>
-    								<option value="11">11</option>
-   									<option value="12">12</option>
-   								</select>
-   							</div>
-  							<label for="sexe">Sexe:</label>
-   								<select id="sexe">
-    								<option value="masculin">Masculin</option>
-    								<option value="feminin">Feminin</option>
-   									<option value="autre">Autre</option>
-   								</select>  								
-   							</div>
-
-   							<div class="geographie">
-    							<label for="pays">Pays:</label>
-  								<select id="pays">
-    								<option value="france">France</option>
-    								<option value="belgique">Belgique</option>
-    								<option value="suisse">Suisse</option>
-    								<option value="canada">Canada</option>
-    							</select>    							
-    							<label for="hemisphere">Hémisphère:</label>	  
-   								<select id="hemisphere">
-    								<option value="nord">Nord</option>
-    								<option value="sud">Sud</option>
-    							</select>
-   							</div>
-	
-    						<label for="nom-ile">Nom de l'île:</label>
-								<input type="text" id="nom-ile" name="ile" value="DidneyWorl">
-
-  							<button id="inscrire" value="S'inscrire" onclick="sinscrire()">S'inscrire</button>
-						</form> 			
-						<button id="bouton-retour" onclick="pageMembre(false)">Retour</button>				
+		<title>My Animal Crossing</title>
+	</head>
+	<body>
+			<input type="checkbox" id="toggle">
+			<header>
+				<label for="toggle" id="burger">☰</label>
+				<div id="logo">
+					<img src="images/logo.png" alt="Logo de My Animal Crossing"/>
 				</div>
-			</section>
-			<div class="centre">
-				<section id="kesako-progression">
-					<div id="titre">
-						<h2>Qu'est-ce que Animal Crossing ?<br/>Quel est le but du site ?</h2>
-					</div>
-					<div id="contenu"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce aliquet metus a rhoncus convallis. Cras maximus, velit id ultricies luctus, sapien mauris volutpat nibh, eu viverra nisl tellus sit amet erat.<br/>
-					Donec elementum sem sit amet porttitor sagittis. Donec efficitur condimentum enim nec interdum. Sed quis ante non enim aliquam euismod. Nullam vitae eros feugiat, consectetur elit nec, ultrices diam.</p>
-					</div>
-				</section>
-				<section id="anniversaire">
-					<div id="titre"><h2>Anniversaire</h2></div>
-					<div id="contenu">
-						<div class=colonne>
-							<div class="villageois">
-								<div class="photo"></div>
-								<div class="nom"><p>Nom</p></div>
-							</div>
-
-						</div>
-					</div>
-				</section>
-			</div>
-			<section id="bete-dispo">
-				<div id="tete-bete-dispo">
-				<div id="titre"><h2>Les bêtes disponibles</h2>
-					<ul id="menu-betes-dispo">
-						<li><a href="#">Insectes</a></li>
-						<li><a href="#">Poissons</a></li>
-						<li><a href="#">Créatures Marines</a></li>
+				<nav>
+					<ul class="menu">
+						<li class="betes"><a href="#">Bêtes</a>
+							<ul class="sous-menu">
+								<li><a href="#">Insectes</a></li>
+								<li><a href="#">Poisson</a></li>
+								<li><a href="#">Créatures Marines</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Fossiles</a></li>
+						<li><a href="#">Oeuvres d'arts</a></li>
+						<li><a href="#">Objets</a></li>
 					</ul>
-				</div>
-				
-				</div>
-				<div id="contenu">
-					<div class="liste-betes">
-							<div class="colonne">
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="colonne">
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="colonne">
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-								<div class= bete>
-									<div class="photo-bete"></div>
-									<div class="nom-bete">Capricorne des agrumes</div>
-									<div class="resume-bete">
-										<div class="stat-bete">
-											<p>Taille :</p>
-											<p>Gigantesque</p>
-										</div>
-										<div class="stat-bete">
-											<p>Heure :</p>
-											<p>9 a.m- 4 a.m</p>
-										</div>
-										<div class="stat-bete">
-											<p>Lieu :</p>
-											<p>Vole (près des fleurs hybrides)</p>
-										</div>
-										<div class="stat-bete">
-											<p>Prix :</p>							
-											<p>20 000 clochettes</p>
-										</div>
-									</div>
-								</div>
-							</div>			
-							</div>							
+				</nav>
+			</header>
+			<main>
+				<section id="espace-membre">
+					<div class="titre"><h2>Connecte-toi sur My Animal Crossing et pars collectionner les objets, insectes, poissons, créatures marines et fossiles.</h2></div>
+					<div class="contenu">
+								<form action="#" id="formulaire-connexion">
+	  								<label>Email:</label>
+	  								<input type="text" class="lmail" name="email" value="lydarly@gmail.com">
+	  								<label>Mot de passe:</label>
+	  								<input type="password" class="lmdp" name="motdepasse" value="toto">
+	  								<a href="#">Mot de passe oublié ?</a>
+	  								<button id="connecter" onclick="seconnecter()">Se connecter</button>
+								</form> 
+									<button id="bouton-inscription" onclick="pageMembre(true)">Pas encore inscrit ?</button>
+
+							<form action="#" id="formulaire-inscription">
+	  							<label>Email:</label>
+	  							<input type="text" class="lmail" name="email" value="lydarly@gmail.com">
+	  								<label>Mot de passe:</label>
+	  								<input type="password" class="lmdp" name="motdepasse" value="toto">
+	  								<label>Confirmer le mot de passe:</label>
+	  								<input type="password" class="clmdp" name="motdepasse" value="toto">							
+
+	   							<div id="identite">
+	   							<label>Date d'anniversaire:</label>
+	    							<div class="formulaire-date">
+	   								<select class="date-anniversaire jour">
+	    								<option value="1">01</option>
+	    								<option value="2">02</option>
+	   									<option value="3">03</option>
+	    								<option value="4">04</option>
+	    								<option value="5">05</option>
+	   									<option value="6">06</option>
+	    								<option value="7">07</option>
+	    								<option value="8">08</option>
+	   									<option value="9">09</option>
+	    								<option value="10">10</option>
+	    								<option value="11">11</option>
+	   									<option value="12">12</option>
+	    								<option value="13">13</option>
+	    								<option value="14">14</option>
+	   									<option value="15">15</option>
+	    								<option value="16">16</option>
+	    								<option value="17">17</option>
+	   									<option value="18">18</option>
+	    								<option value="19">19</option>
+	    								<option value="20">20</option>
+	   									<option value="21">21</option>
+	    								<option value="22">22</option>
+	    								<option value="23">23</option>
+	   									<option value="24">24</option>
+	    								<option value="25">25</option>
+	    								<option value="26">26</option>
+	   									<option value="27">27</option>
+	    								<option value="28">28</option>
+	    								<option value="29">29</option>
+	   									<option value="30">30</option>
+	    								<option value="31">31</option>
+	   								</select>
+	   								<select class="date-anniversaire mois">
+	    								<option value="1">01</option>
+	    								<option value="2">02</option>
+	   									<option value="3">03</option>
+	    								<option value="4">04</option>
+	    								<option value="5">05</option>
+	   									<option value="6">06</option>
+	    								<option value="7">07</option>
+	    								<option value="8">08</option>
+	   									<option value="9">09</option>
+	    								<option value="10">10</option>
+	    								<option value="11">11</option>
+	   									<option value="12">12</option>
+	   								</select>
+	   							</div>
+	  							<label>Sexe:</label>
+	   								<select id="sexe">
+	    								<option value="masculin">Masculin</option>
+	    								<option value="feminin">Feminin</option>
+	   									<option value="autre">Autre</option>
+	   								</select>  								
+	   							</div>
+
+	   							<div class="geographie">
+	    							<label>Pays:</label>
+	  								<select id="pays">
+	    								<option value="france">France</option>
+	    								<option value="belgique">Belgique</option>
+	    								<option value="suisse">Suisse</option>
+	    								<option value="canada">Canada</option>
+	    							</select>    							
+	    							<label>Hémisphère:</label>	  
+	   								<select id="hemisphere">
+	    								<option value="nord">Nord</option>
+	    								<option value="sud">Sud</option>
+	    							</select>
+	   							</div>
+		
+	    						<label>Nom de l'île:</label>
+									<input type="text" id="nom-ile" name="ile" value="DidneyWorl">
+
+	  							<button id="inscrire" value="S'inscrire" onclick="sinscrire()">S'inscrire</button>
+							</form> 			
+							<button id="bouton-retour" onclick="pageMembre(false)">Retour</button>				
 					</div>
+				</section>
+				<div class="centre">
+					<section id="kesako-progression">
+						<div class="titre">
+							<h2>Qu'est-ce que Animal Crossing ?<br/>Quel est le but du site ?</h2>
+						</div>
+						<div class="contenu"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce aliquet metus a rhoncus convallis. Cras maximus, velit id ultricies luctus, sapien mauris volutpat nibh, eu viverra nisl tellus sit amet erat.<br/>
+						Donec elementum sem sit amet porttitor sagittis. Donec efficitur condimentum enim nec interdum. Sed quis ante non enim aliquam euismod. Nullam vitae eros feugiat, consectetur elit nec, ultrices diam.</p>
+						</div>
+					</section>
+					<section id="anniversaire">
+						<div class="titre"><h2>Anniversaire</h2></div>
+						<div class="contenu">
+							<div class=colonne>
+								<div class="villageois">
+									<div class="photo"></div>
+									<div class="nom"><p>Nom</p></div>
+								</div>
+
+							</div>
+						</div>
+					</section>
 				</div>
-			</section>
-		</main>
-		<footer>
-			<div id="copyright">
-				<p>© 2022 My Animal Crossing</p>
-				<p>Ce site est en aucun affilié par Nintendo.<br/>My Animal Crossing est crée par un fan de ce jeu</p>
-			</div>
-			<ul class="menu-footer">
-				<li><a href="#">A propos</a></li>
-				<li><a href="#">Mentions légales</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</footer>	
-	 <script src="main.js"></script> 
-</body>
-</html>
+				<section id="bete-dispo">
+					<div id="tete-bete-dispo">
+					<div class="titre"><h2>Les bêtes disponibles</h2>
+						<ul id="menu-betes-dispo">
+							<li onclick="menuBeteDispo(1)"><a href="#">Insectes</a></li>
+							<li onclick="menuBeteDispo(2)"><a href="#">Poissons</a></li>
+							<li onclick="menuBeteDispo(3)"><a href="#">Créatures Marines</a></li>
+						</ul>
+					</div>
+					
+					</div>
+					<div class="contenu">
+						<div class="liste-betes">
+								<div class="colonne">
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="colonne">
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="colonne">
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+									<div class= bete>
+										<div class="photo-bete"></div>
+										<div class="nom-bete">Capricorne des agrumes</div>
+										<div class="resume-bete">
+											<div class="stat-bete">
+												<p>Taille :</p>
+												<p>Gigantesque</p>
+											</div>
+											<div class="stat-bete">
+												<p>Heure :</p>
+												<p>9 a.m- 4 a.m</p>
+											</div>
+											<div class="stat-bete">
+												<p>Lieu :</p>
+												<p>Vole (près des fleurs hybrides)</p>
+											</div>
+											<div class="stat-bete">
+												<p>Prix :</p>							
+												<p>20 000 clochettes</p>
+											</div>
+										</div>
+									</div>
+								</div>			
+							</div>							
+						</div>
+				</section>
+			</main>
+			<footer>
+				<div id="copyright">
+					<p>© 2022 My Animal Crossing</p>
+					<p>Ce site est en aucun affilié par Nintendo.<br/>My Animal Crossing est crée par un fan de ce jeu</p>
+				</div>
+				<ul class="menu-footer">
+					<li><a href="#">A propos</a></li>
+					<li><a href="#">Mentions légales</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</footer>	
+		 <script src="main.js"></script> 
+	</body>
+	</html>

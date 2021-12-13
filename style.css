@@ -120,7 +120,7 @@ header nav .menu .sous-menu{
 		border: 1px solid #707070;
 	}
 
-	main section #titre{
+	main section .titre{
 		font-family: "Geometr415 Md BT";
 		text-align: center;
 		color: #ffffff;
@@ -138,30 +138,30 @@ header nav .menu .sous-menu{
 		 background-color: #E3C099;
 	}
 
-	main #espace-membre #contenu form{
+	main #espace-membre .contenu form{
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
 		margin-bottom: 0.5rem;
 	}
 
-	main #espace-membre #contenu #formulaire-inscription{	
+	main #espace-membre .contenu #formulaire-inscription{	
 		gap: 0.5rem;
 		display: none;
 	}
 
 
-	main #espace-membre #contenu form label{
+	main #espace-membre .contenu form label{
 		font-family: "Geometr415 Md BT";
 		color: #A1785C;
 		font-size: 1.5rem;
 	}
 
-	main #espace-membre #contenu #formulaire-inscription label{
+	main #espace-membre .contenu #formulaire-inscription label{
 		font-size: 1rem;		
 	}
 
-	main #espace-membre #contenu form input[type=text], main #espace-membre #contenu form input[type=password]{
+	main #espace-membre .contenu form input[type=text], main #espace-membre .contenu form input[type=password]{
 		font-size: 1.2rem;
 		color: #A1785C;
 		border-radius: 5px;
@@ -169,26 +169,26 @@ header nav .menu .sous-menu{
 		padding: 1rem 0 1rem 1rem;
 	}
 
-	main #espace-membre #contenu #formulaire-inscription input[type=text],main #espace-membre #contenu #formulaire-inscription input[type=password]{
+	main #espace-membre .contenu #formulaire-inscription input[type=text],main #espace-membre .contenu #formulaire-inscription input[type=password]{
 		font-size: 1rem;
 		padding: 0.5rem 0 0.5rem 0.5rem;	
 	}
 
-	main #espace-membre #contenu form input[type=text]:focus, main #espace-membre #contenu form input[type=password]:focus{
+	main #espace-membre .contenu form input[type=text]:focus, main #espace-membre .contenu form input[type=password]:focus{
 		outline: none;
 		border: 2px solid #A1785C;
 	}
 
-	main #espace-membre #contenu #formulaire-inscription #identite{
+	main #espace-membre .contenu #formulaire-inscription #identite{
 		display: flex;
 	}
 
-	main #espace-membre #contenu form a{
+	main #espace-membre .contenu form a{
 		font-family: "Usual Light";
 		color: #A1785C;
 	}
 
-	main #espace-membre #contenu form #connecter, main #espace-membre #contenu form #inscrire{
+	main #espace-membre .contenu form #connecter, main #espace-membre .contenu form #inscrire{
 		font-family: "Geometr415 Md BT";
 		font-size: 1.2rem;
 		background-color:#297E1A;
@@ -198,7 +198,7 @@ header nav .menu .sous-menu{
 		color: #ffffff;
 	}
 
-	main #espace-membre #contenu #bouton-inscription, main #espace-membre #contenu #bouton-retour{
+	main #espace-membre .contenu #bouton-inscription, main #espace-membre .contenu #bouton-retour{
 		font-family: "Geometr415 Md BT";
 		font-size: 1.2rem;
 		background-color: #A1785C ;
@@ -209,17 +209,17 @@ header nav .menu .sous-menu{
 		color: #ffffff;
 	}
 
-	main #espace-membre #contenu #bouton-inscription:hover, main #espace-membre #contenu #bouton-retour:hover{
+	main #espace-membre .contenu #bouton-inscription:hover, main #espace-membre .contenu #bouton-retour:hover{
 		cursor: pointer;
 	}
 
-	main #espace-membre #contenu #bouton-retour{
+	main #espace-membre .contenu #bouton-retour{
 		display: none;
 	}
 
 
 
-	main #espace-membre #contenu form #connecter:hover, main #espace-membre #contenu form #inscrire:hover{
+	main #espace-membre .contenu form #connecter:hover, main #espace-membre .contenu form #inscrire:hover{
 		cursor: pointer;
 	}
 
@@ -238,54 +238,54 @@ header nav .menu .sous-menu{
 	}
 
 
-	main .centre #kesako-progression #titre{
+	main .centre #kesako-progression .titre{
 		padding-top: 1px;
 		padding-bottom: 1px;
 	}
 
-	main section #contenu{
+	main section .contenu{
 		padding : 5%
 	}
 
-	main .centre #kesako-progression #contenu p{
+	main .centre #kesako-progression .contenu p{
 		margin: 0;
 		font-family: "Usual Light";
 		color: #A1785C;
 	}
 
-	main .centre #anniversaire #contenu .colonne{
+	main .centre #anniversaire .contenu .colonne{
 		display: flex;
 		align-items: flex-start;
 	}
 
-	main .centre #anniversaire #contenu .colonne .villageois{
+	main .centre #anniversaire .contenu .colonne .villageois{
 		margin-right: 10px;
 	}
 
-	main .centre #anniversaire #contenu .colonne .villageois .photo{
+	main .centre #anniversaire .contenu .colonne .villageois .photo{
 		width: 75px;
 		height: 75px;
 		background-color: #FED330;
 	}
-	main .centre #anniversaire #contenu .colonne .villageois .nom{
+	main .centre #anniversaire .contenu .colonne .villageois .nom{
 		text-align: center;
 		font-family: "Geometr415 Md BT";
 		color: #A1785C;
 		font-weight: bold;
 	}
 
-	main #bete-dispo #titre{
+	main #bete-dispo .titre{
 		padding-top: 0;
 		padding-bottom: 0;
 		margin-top: -20px;
 	}
 
-	main #bete-dispo #tete-bete-dispo #titre h2{
+	main #bete-dispo #tete-bete-dispo .titre h2{
 		padding-top: 15px;
 		padding-bottom: 5px;
 	}
 
-	main #bete-dispo #titre #menu-betes-dispo{
+	main #bete-dispo .titre #menu-betes-dispo{
 		list-style-type: none;
 		display: flex;
 		justify-content: space-evenly;
@@ -293,7 +293,7 @@ header nav .menu .sous-menu{
 		margin-bottom: 7.5px;
 	}
 
-	main #bete-dispo #titre #menu-betes-dispo li a{
+	main #bete-dispo .titre #menu-betes-dispo li a{
 		background-color: #9EE791;
 		color: #297E1A;
 		text-decoration: none;
@@ -301,12 +301,12 @@ header nav .menu .sous-menu{
 		border-radius: 10px 10px 0 0;
 	}
 
-	main #bete-dispo #titre #menu-betes-dispo li a:hover{
+	main #bete-dispo .titre #menu-betes-dispo li a:hover{
 		background-color: #297E1A;
 		color: #FED330;
 	}
 
-	main #bete-dispo #contenu{
+	main #bete-dispo .contenu{
 		padding: 2%;
 		height: 460px;
 		overflow-y: scroll;
@@ -314,18 +314,18 @@ header nav .menu .sous-menu{
 		scrollbar-color: #297E1A #9EE791;
 	}
 
-	main #bete-dispo #contenu .liste-betes{
+	main #bete-dispo .contenu .liste-betes{
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
 	}
 
-	main #bete-dispo #contenu .liste-betes .colonne{
+	main #bete-dispo .contenu .liste-betes .colonne{
 		display: flex;
 		justify-content: space-around;
 	}
 
-	main #bete-dispo #contenu .liste-betes .colonne .bete{
+	main #bete-dispo .contenu .liste-betes .colonne .bete{
 		width: 23%;
 		height: 14rem;
 		font-family: "Usual Light";
@@ -334,13 +334,13 @@ header nav .menu .sous-menu{
 		display: grid;
 	}
 
-	main #bete-dispo #contenu .liste-betes .colonne .bete .nom-bete{
+	main #bete-dispo .contenu .liste-betes .colonne .bete .nom-bete{
 		text-align: center;
 		font-size: 0.9rem;
 		font-weight: bold;
 	}
 
-	main #bete-dispo #contenu .liste-betes .colonne .bete .photo-bete{
+	main #bete-dispo .contenu .liste-betes .colonne .bete .photo-bete{
 		width: 50px;
 		height: 50px;
 		background-color: brown;
@@ -348,11 +348,11 @@ header nav .menu .sous-menu{
 		margin-right: auto;
 	}
 
-	main #bete-dispo #contenu .liste-betes .colonne .bete .resume-bete p{
+	main #bete-dispo .contenu .liste-betes .colonne .bete .resume-bete p{
 		margin: 0;
 	}
 
-	main #bete-dispo #contenu .liste-betes .colonne .bete .resume-bete .stat-bete p:nth-child(1){
+	main #bete-dispo .contenu .liste-betes .colonne .bete .resume-bete .stat-bete p:nth-child(1){
 		font-size: 0.8rem;
 		font-weight: bold;
 	}
@@ -392,7 +392,7 @@ footer .menu-footer li a:hover{
 }
 
 @media screen and (max-width: 1805px) and (min-width: 1200px){
-	main #espace-membre #contenu{
+	main #espace-membre .contenu{
 		padding: 2% 5%;
 	}
 }
@@ -406,32 +406,32 @@ footer .menu-footer li a:hover{
 }
 
 @media screen and (max-width: 1390px) and (min-width: 1265px){
-	main #espace-membre #contenu #formulaire{
+	main #espace-membre .contenu #formulaire{
 		gap: 0.4rem;
 	}
 
-	main #kesako-progression #contenu {
+	main #kesako-progression .contenu {
 		padding: 2%;
 	}
 
-	main #bete-dispo #contenu .liste-betes .colonne .bete .resume-bete .stat-bete p:nth-child(1){
+	main #bete-dispo .contenu .liste-betes .colonne .bete .resume-bete .stat-bete p:nth-child(1){
 		font-size: 0.7rem;
 	}
 
-	main #bete-dispo #contenu .liste-betes .colonne .bete .resume-bete .stat-bete p:nth-child(2){
+	main #bete-dispo .contenu .liste-betes .colonne .bete .resume-bete .stat-bete p:nth-child(2){
 		font-size: 0.6rem;
 	}
 }
 
 
 @media screen and (max-width: 505px){
-	main #espace-membre #contenu{
+	main #espace-membre .contenu{
 		padding: 0 5%;
 	}
 }
 
 @media screen and (max-width: 395px){
-	main #espace-membre #contenu #formulaire{
+	main #espace-membre .contenu #formulaire{
 		gap: 0.4rem;
 	}
 }
