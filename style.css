@@ -274,7 +274,6 @@ header nav .menu .sous-menu{
 	}
 
 	main #espace-membre .contenu form input[type=text],main #espace-membre .contenu form input[type=password]{
-		width: 95%;
 		font-size: 1rem;
 		padding: 0.5rem 0 0.5rem 0.5rem;
 	}

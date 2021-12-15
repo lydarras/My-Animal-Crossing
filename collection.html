@@ -30,6 +30,57 @@
 			</nav>
 		</header>
 		<main>
+
+	<section id="popup">
+			<div id="fond"></div>
+
+
+				<div class="titre">
+					<h2>A propos</h2>
+					<div class="fermer">
+						<p onclick="fermerFenetre()">X</p>
+					</div>
+				</div>
+
+				<div class="contenu">
+					<div class="propos-mentions">
+						<img src="images/nook.png" alt="Toom Nook"/>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Fusce aliquet metus a rhoncus convallis. Cras maximus, velit
+						id ultricies luctus, sapien mauris volutpat nibh, eu viverra nisl
+						tellus sit amet erat. Donec elementum sem sit amet porttitor
+						sagittis. Donec efficitur condimentum enim nec interdum.
+						Sed quis ante non enim aliquam euismod. Nullam vitae eros
+						feugiat, consectetur elit nec, ultrices diam.
+						Morbi sit amet porta felis</p>	
+					</div>
+
+						<form action="#" id="formulaire-contact">
+	  					<div class="coordonnees">
+	  							<div class="prenom">
+	  								<label>Prénom :</label>
+	  								<input type="text" class="lprenom" name="prenom_contact" value="Nicky">	  			
+	  							</div>
+								<div class="email">
+	  							<label>Email :</label>
+	  							<input type="text" class="lmail" name="email" value="lydarly@gmail.com">
+	  							</div>
+	  					</div>
+
+	  					<label>Objet :</label>
+	  					<input type="text" class="objet" name="lobjet" value="toto">
+						<label>Message</label>
+						<textarea name="message" id="messagerie" rows="4"></textarea>
+						<ul class="actions">
+							<li><input type="reset" value="Effacer" /></li>
+							<li><input type="submit" value="Envoyer" class="primary" /></li>
+						</ul>
+					</form>
+				</div>
+						
+
+		</section>
+
 				<section id="espace-membre">
 					<div class="titre"><h2>Connecte-toi sur My Animal Crossing et pars collectionner les objets, insectes, poissons, créatures marines et fossiles.</h2></div>
 					<div class="contenu">
@@ -38,10 +89,10 @@
 	  								<input type="text" class="lmail" name="email" value="lydarly@gmail.com">
 	  								<label>Mot de passe:</label>
 	  								<input type="password" class="lmdp" name="motdepasse" value="toto">
-	  								<a href="#">Mot de passe oublié ?</a>
+	  								<a href="#" onclick="pageMembre(2)">Mot de passe oublié ?</a>
 	  								<button id="connecter" onclick="seconnecter()">Se connecter</button>
 								</form> 
-									<button id="bouton-inscription" onclick="pageMembre(true)">Pas encore inscrit ?</button>
+									<button id="bouton-inscription" onclick="pageMembre(1)">Pas encore inscrit ?</button>
 
 							<form action="#" id="formulaire-inscription">
 	  							<label>Email:</label>
@@ -129,8 +180,16 @@
 									<input type="text" id="nom-ile" name="ile" value="DidneyWorl">
 
 	  							<button id="inscrire" value="S'inscrire" onclick="sinscrire()">S'inscrire</button>
-							</form> 			
-							<button id="bouton-retour" onclick="pageMembre(false)">Retour</button>				
+							</form>
+
+							<form id="mdp-oublie">
+								<p>Oh non ! Tu as oublié ton mot de passe ? Pas de panique ! Envoie juste ton mail et tu pourras récupérer ton mot de passe.</p>
+								<label>Email:</label>
+	  							<input type="text" class="lmail" name="email" value="lydarly@gmail.com">
+	  							<button id="recuperation">Récupérer le mot de passe</button>
+	  						</form> 			
+
+							<button id="bouton-retour" onclick="pageMembre(3)">Retour</button>				
 					</div>
 				</section>
 			<section id="collection">
@@ -422,11 +481,11 @@
 				<p>Ce site est en aucun affilié par Nintendo.<br/>My Animal Crossing est crée par un fan de ce jeu</p>
 			</div>
 			<ul class="menu-footer">
-				<li><a href="#">A propos</a></li>
-				<li><a href="#">Mentions légales</a></li>
-				<li><a href="#">Contact</a></li>
+					<li><a href="#" onclick="affichePopUp('A propos')">A propos</a></li>
+					<li><a href="#" onclick="affichePopUp('Mentions légales')">Mentions légales</a></li>
+					<li><a href="#" onclick="affichePopUp('Contact')">Contact</a></li>
 			</ul>
 		</footer>	
-	 <script src="main.js"></script> 
+	 <script src="collection.js"></script> 
 </body>
 </html>
