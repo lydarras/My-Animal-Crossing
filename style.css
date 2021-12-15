@@ -108,7 +108,7 @@ header nav .menu .sous-menu{
 	z-index: 1;
 }
 
-/* Main width 480 gauche et droite / 600 pour centre */
+/* Partie du milieu */
 
 	main{
 		display: flex;
@@ -131,12 +131,112 @@ header nav .menu .sous-menu{
 		border-bottom: 1px solid #707070;
 	}
 
+	main section .contenu{
+		padding : 0.5rem;
+	}
+
+
+	/* Le popup lorsqu'on clique sur l'un des menus du footer */
+
+	main #popup{
+		border: none;
+		display: none;
+	}
+
+	main #popup #fond{
+		width: 100%;
+		height: 58.05rem;
+		position: absolute;
+		z-index: 2;
+		opacity: 0.5;
+		background-color: black;
+		margin-top: -10.6rem;
+		margin-left: -30px;
+		border: none;
+	}	
+
+	main #popup .titre{
+		width: 90%;
+		opacity: 1;
+		position: fixed;
+		z-index: 3;
+		display: flex;
+		justify-content: space-around;
+		margin-top: -5rem;
+		margin-left: 3%;
+	}
+
+	main #popup .titre h2{
+		font-size: 2rem;
+		margin: 14px;
+	}
+
+	main #popup .titre .fermer p{
+		font-size: 3rem;
+		margin: 6px;
+	}
+
+	main #popup .titre .fermer p:hover{
+		cursor: pointer;
+	}
+
+	main #popup .contenu{
+		opacity: 1;
+		width: 90%;
+		border-radius: 15px;
+		background-color: #E3C099;
+		position: fixed;
+		z-index: 2;
+		padding: 0;
+		margin-top: -4rem;
+		margin-left: 3%;
+	}
+
+	main #popup .contenu form{
+		flex-direction: column;
+		margin: 7rem 2rem 2rem 2rem;
+	}
+
+	main #popup .contenu form .coordonnees{
+		display: flex;
+	}
+
+	main #popup .contenu form .actions{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		gap: 0.5rem;
+	}
+
+	main #popup .contenu form .actions li{
+		list-style-type: none;
+	}
+
+	main #popup .contenu .propos-mentions{
+		margin-top: 7rem;
+	}
+
+	main #popup .contenu .propos-mentions img{
+		width: 50%;
+		margin: 0 25%;
+	}
+
+	main #popup .contenu .propos-mentions p{
+		font-family: "Usual Light";
+		color: #A1785C;
+		padding: 1rem;
+	}
+
+	/* La section gauche et droite : l'espace membres et les bêtes disponibles ont les mêmes hauters et largeurs */
+
 	main #espace-membre, main #bete-dispo{
 		 width: 30%;
 		 height: 600px;
 		 border-radius: 15px;
 		 background-color: #E3C099;
 	}
+
+	/* La section gauche de l'espace membre (Inscription et connexion) */
 
 	main #espace-membre .contenu form{
 		display: flex;
@@ -145,23 +245,27 @@ header nav .menu .sous-menu{
 		margin-bottom: 0.5rem;
 	}
 
-	main #espace-membre .contenu #formulaire-inscription{	
-		gap: 0.5rem;
+	main #espace-membre .contenu #formulaire-inscription,  main #espace-membre .contenu #formulaire-modification ,main #espace-membre .contenu #mdp-oublie{	
+		gap: 0.2rem;
 		display: none;
 	}
 
+	main #espace-membre .contenu #formulaire-inscription .coordonnees{
+		display: flex;
+		flex-direction: column;
+	}
 
-	main #espace-membre .contenu form label{
+	main #espace-membre .contenu form label, main #popup .contenu form label, main #espace-membre .contenu #mdp-oublie p{
 		font-family: "Geometr415 Md BT";
 		color: #A1785C;
 		font-size: 1.5rem;
 	}
 
-	main #espace-membre .contenu #formulaire-inscription label{
+	main #espace-membre .contenu form label{
 		font-size: 1rem;		
 	}
 
-	main #espace-membre .contenu form input[type=text], main #espace-membre .contenu form input[type=password]{
+	main #espace-membre .contenu form input[type=text], main #popup .contenu form input[type=text], main #espace-membre .contenu form input[type=password]{
 		font-size: 1.2rem;
 		color: #A1785C;
 		border-radius: 5px;
@@ -169,9 +273,10 @@ header nav .menu .sous-menu{
 		padding: 1rem 0 1rem 1rem;
 	}
 
-	main #espace-membre .contenu #formulaire-inscription input[type=text],main #espace-membre .contenu #formulaire-inscription input[type=password]{
+	main #espace-membre .contenu form input[type=text],main #espace-membre .contenu form input[type=password]{
+		width: 95%;
 		font-size: 1rem;
-		padding: 0.5rem 0 0.5rem 0.5rem;	
+		padding: 0.5rem 0 0.5rem 0.5rem;
 	}
 
 	main #espace-membre .contenu form input[type=text]:focus, main #espace-membre .contenu form input[type=password]:focus{
@@ -179,7 +284,7 @@ header nav .menu .sous-menu{
 		border: 2px solid #A1785C;
 	}
 
-	main #espace-membre .contenu #formulaire-inscription #identite{
+	main #espace-membre .contenu form #identite{
 		display: flex;
 	}
 
@@ -188,17 +293,18 @@ header nav .menu .sous-menu{
 		color: #A1785C;
 	}
 
-	main #espace-membre .contenu form #connecter, main #espace-membre .contenu form #inscrire{
+	main #espace-membre .contenu form #connecter, main #espace-membre .contenu form #inscrire, main #popup .contenu form .actions li input[type=submit], main #espace-membre .contenu form #recuperation{
 		font-family: "Geometr415 Md BT";
 		font-size: 1.2rem;
 		background-color:#297E1A;
 		padding: 1rem 0 1rem 0;
 		border-radius: 15px;
+		width: 100%;
 		border: 2px solid #707070;
 		color: #ffffff;
 	}
 
-	main #espace-membre .contenu #bouton-inscription, main #espace-membre .contenu #bouton-retour{
+	main #espace-membre .contenu #bouton-inscription, main #espace-membre .contenu #bouton-retour,  main #popup .contenu form .actions li input[type=reset]{
 		font-family: "Geometr415 Md BT";
 		font-size: 1.2rem;
 		background-color: #A1785C ;
@@ -223,6 +329,8 @@ header nav .menu .sous-menu{
 		cursor: pointer;
 	}
 
+	/* La partie central avec les 2 sections alignées verticalement */
+
 	main .centre{
 		display: flex;
 		justify-content: space-between;
@@ -243,11 +351,7 @@ header nav .menu .sous-menu{
 		padding-bottom: 1px;
 	}
 
-	main section .contenu{
-		padding : 5%
-	}
-
-	main .centre #kesako-progression .contenu p{
+	main .centre #kesako-progression .contenu #kesako p{
 		margin: 0;
 		font-family: "Usual Light";
 		color: #A1785C;
@@ -391,12 +495,6 @@ footer .menu-footer li a:hover{
 	color: #FED330;
 }
 
-@media screen and (max-width: 1805px) and (min-width: 1200px){
-	main #espace-membre .contenu{
-		padding: 2% 5%;
-	}
-}
-
 /* Header Responsive */
 
 @media screen and (max-width: 1520px){
@@ -524,10 +622,22 @@ footer .menu-footer li a:hover{
 	}
 
 	/* Responsive Main */
-
 	main{
 		flex-direction: column;
 		gap : 3em;
+	}
+
+	main #popup #fond{
+		width: 101.45%;
+		height: 144.5rem;
+	}
+
+	main #popup .contenu form .coordonnees{
+		flex-direction: column;
+	}
+
+	main #popup .contenu form input[type=text]{
+		width: 100%;
 	}
 
 	main #espace-membre{
