@@ -367,9 +367,14 @@ header nav .menu .sous-menu{
 		margin: 0.5rem;
 	}
 
+	main .centre #kesako-progression .contenu #progression .colonne{
+		display: flex;
+	}
+
 	main .centre #kesako-progression .contenu #progression .colonne .type-collections{
 		color: #A1785C;	
-		font-family: "Geometr415 Md BT";	
+		font-family: "Geometr415 Md BT";
+		font-size: 0.7rem;
 	}
 
 	main .centre #kesako-progression .contenu #progression .colonne .type-collections .photo{

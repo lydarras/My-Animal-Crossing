@@ -1,3 +1,4 @@
+
 // La variable acces_membre est un booléen pour déterminer si on accède à la page d'authenfication (par défaut)
 // ou à la page d'inscription
 // 1 = page d'inscription / 2 = page d'oubli de MDP / 3 = page d'authenfication / 4 = page de modification
@@ -49,6 +50,16 @@ function seconnecter(){
 
 function sinscrire(){
 	console.log("Je m'inscris");
+}
+
+function change(numero){
+	console.log(numero)
+	if(document.getElementsByClassName("photo-bete")[numero-1].style.opacity == "1"){
+		document.getElementsByClassName("photo-bete")[numero-1].style.opacity = "0.5";
+	}
+	else{
+		document.getElementsByClassName("photo-bete")[numero-1].style.opacity = "1";
+	}
 }
 
 function affichePopUp(texte){
