@@ -108,7 +108,7 @@ header nav .menu .sous-menu{
 	z-index: 1;
 }
 
-/* Main width 480 gauche et droite / 600 pour centre */
+/* Partie du milieu */
 
 	main{
 		display: flex;
@@ -130,6 +130,8 @@ header nav .menu .sous-menu{
 		border-radius: 15px 15px 0 0;
 		border-bottom: 1px solid #707070;
 	}
+
+/* Le popup lorsqu'on clique sur l'un des menus du footer */
 
 	main #popup{
 		border: none;
@@ -227,12 +229,16 @@ header nav .menu .sous-menu{
 		 background-color: #E3C099;
 	}
 
+	/* La section gauche et droite : l'espace membres et les bêtes disponibles ont les mêmes hauters et largeurs */
+
 	main #espace-membre .contenu form{
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
 		margin-bottom: 0.5rem;
 	}
+
+/* La section gauche de l'espace membre (Inscription et connexion) */
 
 	main #espace-membre .contenu #formulaire-inscription,  main #espace-membre .contenu #formulaire-modification ,main #espace-membre .contenu #mdp-oublie{	
 		gap: 0.2rem;
@@ -332,6 +338,8 @@ header nav .menu .sous-menu{
 	main #espace-membre .contenu form #connecter:hover, main #espace-membre .contenu form #inscrire:hover{
 		cursor: pointer;
 	}
+
+/* La partie central avec les 2 sections alignées verticalement */
 
 	main .centre{
 		display: flex;
