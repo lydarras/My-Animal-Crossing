@@ -108,12 +108,12 @@ header nav .menu .sous-menu{
 	z-index: 1;
 }
 
-/* Main width 480 gauche et droite / 600 pour centre */
+/*main*/
 
 	main{
 		display: flex;
 		justify-content: space-around;
-		padding: 10.5rem 1rem 2.25rem 1rem;
+		padding: 10.5rem 1rem 1.4rem 1rem;
 	}
 
 	main section{
@@ -221,7 +221,7 @@ header nav .menu .sous-menu{
 	}
 
 	main #espace-membre, main #collection{
-		 width: 30%;
+		 flex : 1;
 		 height: 600px;
 		 border-radius: 15px;
 		 background-color: #E3C099;
@@ -322,7 +322,8 @@ header nav .menu .sous-menu{
 	}
 
 	main #collection{
-		width: 66%;
+		flex : 3;
+		margin-left: 1%;
 	}
 
 	main #collection .titre{
@@ -413,12 +414,11 @@ header nav .menu .sous-menu{
 /*Footer*/
 
 footer{
-	height: 7rem;
+	height: 11rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #9EE791;
-	padding: 0.55rem 2rem 0 2rem;
 }
 
 footer #copyright{
